@@ -14,19 +14,19 @@ self.addEventListener('install', evento=>{
     const promesa =caches.open(CACHEE)
     .then(cache=>{
     return cache.addAll([
-        '/',
-        '/index.html',
-        '/css/icons.css',
-        '/css/googleapi.css',
-        '/manifest.json',
-        '/js/bootstrap.min.js',
-        '/js/application.js',
-        '/js/app.js',
-        '/images/404.jpg',
-        '/offline.html',
-        '/form.html',
-        '/css/styles.css',
-            '/css/londinium-theme.css'
+        //'/',
+        'index.html',
+        'css/icons.css',
+        'css/googleapi.css',
+        'manifest.json',
+        'js/bootstrap.min.js',
+        'js/application.js',
+        'js/app.js',
+        'images/404.jpg',
+        'offline.html',
+        'form.html',
+        'css/styles.css',
+        'css/londinium-theme.css'
     ]);
     });
     const cacheInmutable =  caches.open(CACHE_INMUTABLE)
